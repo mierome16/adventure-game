@@ -1,3 +1,5 @@
+function play() {
+
 var playgame = confirm("Do you want to try to escape the Castle")
 
 if(playgame == true) {
@@ -26,3 +28,10 @@ if(playgame == true) {
 } else {
     alert("you're lame... GAME OVER")
 }
+ var replay = confirm("Do you want to try again?");
+    if (replay==true) {
+        play();
+    }
+}
+
+play();
